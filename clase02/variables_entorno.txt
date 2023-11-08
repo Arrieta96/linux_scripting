@@ -1,0 +1,48 @@
+Son valores dinámicos que afectan los programas o procesos que se ejecutan en un servidor. Existen en todos los sistemas operativos y su tipo puede variar. Las variables de entorno se pueden crear, editar, guardar y eliminar.
+
+- printenv o env = lista completa de variables de entorno.
+- echo + '$comando' -> echo $HOME = imprimir una variable de entorno
+- Para inicializar una variable de entorno, luego imprimir
+	1. export variable='$comando' 
+	2. echo + '$comando'
+  Ejemplo
+	1. export MIVARIABLE=$PATH
+	2. echo $MIVARIABLE
+	
+- Establecer una variable de entorno local
+  Ejemplo
+  	local_var=danillo
+	echo $local_var
+	danillo
+
+- Crear una variable de entorno global utilizando el comando export
+  Ejemplo
+  	export Global_var=Hello
+	bash
+	echo $Global_var
+	resultado: Hello
+
+
+Si en un caso nosotros queremos agregar un comando creado y no permite agregar en /usr/bin ya que es una carpeta protegida o no podemos agregar en /usr/sbin o /usr/local/bin lo que podemos hacer es utilizar el formato echo $PATH, luego crear una carpeta de binarios personalizada de tal manera que nuestro PATH va a reconocer los binarios que estan en la ruta que nosotros especificamos, para realizar este procedimiento debemos sobreescribir el path con estas rutas y asignar la nueva ruta de la carpeta personalizada de binarios  y asi el sistema va a reconocer que hay una carpeta nueva personalizada la cual almacena binarios para guardar.
+
+Mi ruta:
+	cd /usr/bin/ 
+	echo $PATH | tr : \\n
+
+/usr/local/sbin
+/usr/local/bin
+/usr/sbin
+/usr/bin
+/sbin
+/bin
+/usr/games
+/usr/local/games
+/snap/bin
+/snap/bin
+
+
+
+
+
+
+binario(bin) = programa que se encarga de realizar una tarea.

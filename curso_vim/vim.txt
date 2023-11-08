@@ -1,0 +1,55 @@
+Vim cuenta con 2 modos
+Modo normal: leer el documento y navegar a traves del documento, modificar el documento
+Modo de insercion: editar e insertar datos en el documento.
+	- Ingresar = vim
+	- :q = salir
+	- :help = para obtener ayuda
+ 
+- Para escribir presionamos 'i', al presionar en la parte inferior se activa el modo insertar.
+- Escape(esc) sirve para salir del modo en el que estamos. 
+- Solo se puede ejecutar comandos en el modo normal.
+- Guardar = :w + enter
+- Si estamos en una ruta 'X' y queremos editar en la ruta 'Y' escribimos = :edit
+	vim Desktop/Linux/curso_scripting/curso_vim/hola_mundo.txt
+- Cancelar los cambios realizados y salir = :q!
+- Guardar y salir = :wq o colocar :x
+- Numerar las lineas del archivo = :set number o :set nu
+- Direcciones = arriba: k, abajo: j, derecha: l, izquierda: h
+- Ir al inicio de la linea = tecla '0'
+- Ir al final de la linea = shift + 4
+- Ir al inicio de cada palabra = w(izquierda a derecha) / b(derecha a izquierda) 
+- Ir al final de la palabra = e 
+- Ir X numeros de fila hacia arriba o abajo = 'numero' + j / k
+	Ejemplo: Si estamos en la posicion 1 y queremos ir a la fila 10 presionamos '9 + j' y nos encontraremos en la fila 10.
+- Encontrar una letra mas cercana = 'f + letra' o 'f + letraMayuscula(shift + letra)'	
+- Encontrar una palabra similar = *
+- Ir al inicio del archivo = gg
+- Ir al final del archivo = GG
+- Ir a una linea especifica = 'numero + G'
+- Crear una nueva linea y activa el modo de insercion = o(insertar texto hacia abajo)
+- Insertar hacia arriba = O
+- Eliminar una letra o caracter = x
+- Eliminar una letra o caracter hacia la izquierda = X
+- Reemplazar un caracter = 'r + letra'
+- Eliminar una palabra = ubicarnos al inicio de la palabra + dw
+- Cortar una linea completa = dd
+- Pegar linea cortado = p
+- Copiar linea = yy
+- Buscar una palabra = /palabraPorBuscar, para navegar en la siguiente coincidencia presionar 'n'
+
+
+******
+Dar colores a vim cuando estamos programando, mostrar colores si hay una sintaxis que no es correcta, activar la identacion, la identacion es de 4 espacios, y deben ser permitidas estas tabulaciones.
+Todo esto se realiza en el home 
+	- vim .vimrc
+	- presionar 'i'
+	- set showmode
+	- set autoindent
+	- set tabstop=4
+	- set expandtab
+	- syntax on
+	- escape
+	- :x
+	- enter
+
+

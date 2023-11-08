@@ -1,0 +1,27 @@
+Script
+- Los shell scripts son herramientas muy útiles para automatizar tareas.
+- La sintaxis de los shell-scripts se caracteriza por ser bastante 	 estricta en su escritura, especialmente en lo que se refiere a la inserción u omisión de espacios en blanco entre las palabras especiales. Tenga esto muy en cuenta a la hora de escribir los scripts que se proponen.
+	- Secuencia de comandos
+	- Un programa relativamente Simple
+	- Generalmente no se compilan
+I	- Identificados por el sistema a traves de encabezados:
+			#!/bin/bash
+
+
+Terminal
+- Se llama prompt al caracter o conjunto de caracteres que se muestran en una linea de comandos para indicar que esta a la espera de ordenes. 
+- Interfaz grafica que simula unalinea de comandos(Ventana que nos muestra el promt)
+- La terminal aloja a la Shell
+
+
+Linea de comandos (Shell)
+- Un programa que toma comandos y los pasa al sistema operativo para procesarlos. (Interpreta los comandos y le dice al S.O que hacer)
+- Bourne Shell, Bash Shell, C Shell, Power Shell
+
+
+¿ Para que sirve ?
+En ocasiones ejecutar un comando independiente nos es insuficiente para la resolucion de una tarea determinada. Por ejemplo cuando deseas automatizar un proceso de deploy y para ello lo que debe hacer es dirigirte a la carpeta de tu proyecto, realizar un 'git pull' y dependiendo del estado de ese git pull ejecutar un 'install composer', 'update composer', 'npm install' o lo que sea (el proceso de automatizacion requiere un conjunto de comandos) es por ello podemos realizar un script que haga o ejecute dichos comandos de manera automatica para poder soluicionar este problema.
+
+Los usos dependen mucho de nuestros requerimientos, ya que nos ayuda en nuestra vida.   
+
+
