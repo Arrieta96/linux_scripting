@@ -1,0 +1,6 @@
+Pasos
+	- vim primer_script.sh
+	- ls -lh primer_script.sh (ver si tiene permisos de ejecucion)
+	- chmod +x primer_script.sh (si no tiene, escribir comando)
+	- ./primer_script.sh (ejecutar script)
+

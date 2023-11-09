@@ -1,0 +1,9 @@
+Respetar la sintaxis
+
+case $variable in
+	"var1" echo "texto";;
+	"var2" echo "Texto";;
+	[var3-var4]) echo "Texto";;
+	*) echo "Texto"
+esac
+

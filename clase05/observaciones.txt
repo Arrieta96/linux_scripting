@@ -1,0 +1,24 @@
+
+Para llamar un comando y su ejecucion es necesario colocar '$' dentro del script.
+Ejempĺo
+	ubicacion=$(pwd)
+	echo $ubicacion
+
+Al ejecutar las variables sin comillas solo se podra llamar a 2 parametros, caso contrario con las comillas.
+Ejemplo:
+	Caso 1 
+	Llamar
+	./parametros.sh Danillo Callupe
+	
+	Resultado
+	Hola mi nombre es: Danillo Callupe
+	
+	Caso 2
+	Llamar
+	./parametros.sh "Byron David" "Ortega Cabezas"
+
+	Resultado
+	Hola mi nombre es: Byron David Ortega Cabezas
+
+
+

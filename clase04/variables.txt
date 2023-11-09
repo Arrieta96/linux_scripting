@@ -1,0 +1,15 @@
+Entrar a vim .baschrc
+Declara nuestra variable
+Para cargar el archivo(.bashrc) hay 2 formas
+	source .bashrc
+	bash
+	
+	
+	
+	
+	
+Variables de entorno
+Pueden ser accedidas en cualquier parte del sistema
+
+Variables de usuario
+Solo pueden ser accedidas dentro del script

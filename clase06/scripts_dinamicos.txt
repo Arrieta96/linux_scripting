@@ -1,0 +1,32 @@
+El script pide al usuario un nombre y una edad, el resultado es mostrar los datos ingresados por el usuario.
+
+Con los comandos 'read -p' indicamos al usuario que ingrese un dato.
+
+
+RETO
+
+Hacer un script el cual pida realizar el promedio de 3 notas ingresadas por el usuario.
+
+Solucion:
+
+Pasos:	
+	1. Creamos el Script -> vim promedio.sh
+	2. Declaramos las variables 
+		#!/bin/bash
+		# Author: Danillo Callupe
+		# Promedio de 3 notas
+
+		n1=0
+		n2=0
+		n3=0
+
+		read -p "Ingresar primera nota: " n1
+		read -p "Ingresar segunda nota: " n2
+		read -p "Ingresar tercera nota: " n3
+
+		echo "Promedio de Notas: " $(((n1+n2+n3)/3))
+
+	3. Cambiamos los permisos(de ejecucion) -> chmod +x promedio.sh
+	4. Ejecutamos -> ./promedio.sh
+		
+

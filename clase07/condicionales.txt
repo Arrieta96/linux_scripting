@@ -1,0 +1,56 @@
+copiar archivos = cp
+
+OPERADORES RELACIONALES
+-eq: igual a 
+-ne: no es igual a
+-gt: mayor a
+-ge: mayor o igual a
+-lt: menor a
+-le: menor o igual a
+
+RETO
+
+Copiar el script reto realizado en la clase anterior y agregar condicionales.
+Indicar si el usuario aprobo el curso
+
+Solucion
+
+Pasos:
+	1. Copiar y renombrar script -> cp promedio.sh reto_promedio 
+	2. Declarar la condicionales
+		#!/bin/bash
+		# Author: Danillo Callupe
+		# Promedio de 3 notas
+
+		n1=0
+		n2=0
+		n3=0
+
+		read -p "Ingresar primera nota: " n1
+		read -p "Ingresar segunda nota: " n2
+		read -p "Ingresar tercera nota: " n3
+
+		promedio=$(((n1+n2+n3)/3))
+
+
+		echo "Promedio de Notas: $promedio"
+
+		echo "================================="
+		# CON SIMBOLOS 
+		if (( $promedio >= 13)); then
+		    echo "Usted aprobo la materia."
+		else
+		    echo "Usted reprobo la materia."
+		fi
+
+		echo "================================="
+		# CON LETRAS
+		if [ $promedio -le 20 ] && [ $promedio -ge 13 ]; then
+		    echo "Sigamos practicando, para obtener mejores resultados."
+		else
+		    echo "Nos vemos en verano :D"
+		fi
+
+
+	3. Ejecutar script -> ./reto_promedio.sh
+	
