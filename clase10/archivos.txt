@@ -1,0 +1,9 @@
+
+
+WHILE
+Estructura
+while IFS= read line
+do
+    echo "$line"
+done < $input_name
+

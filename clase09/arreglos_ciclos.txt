@@ -1,0 +1,61 @@
+ARREGLOS 
+
+Declarar:
+	numeros=(n1 n2 n3 n4 n5)
+	nombre=(texto1 texto2) o ("texto1" "texto2") o ("texto1" texto2)
+	rangos=({A..Z} {1..10})	
+
+Llamar:
+	echo "${numeros[*]}"
+	echo "${nombre[*]}"
+	echo "${rangos[*]}"
+	
+Tamaño de arreglo:
+	echo "${#numeros[*]}"
+	echo "${#nombre[*]}"
+	echo "${#rangos[*]}"
+	
+LLamar un elemento:
+	echo "${numeros[3]}"
+	echo "${nombre[3]}"
+	echo "${rangos[3]}"
+	
+Manipular arreglos
+	unset: eliminar un elemento
+		unset numeros[0]
+	Agregar un elemento al inicio
+		numeros[0]=1
+	
+	       
+ITERACIONES - FOR
+
+	Primera forma:
+	for num in ${numeros[*]}
+	do
+	    echo "Numero: $num"
+	done
+	
+	Segunda forma:
+	for ((i=0; i<${#numeros[*]}; i++))
+	do
+	    echo "numero ${numeros[i]}"
+	done
+    
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	 

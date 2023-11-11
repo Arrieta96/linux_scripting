@@ -1,0 +1,22 @@
+Estructura
+	nombreFuncion () {
+	    echo "Hola mundo!!"
+	}
+	nombreFuncion
+	
+	
+	parametros () {
+	    echo "Texto $1 Texto $2 "
+	}
+	read -p "Ingrese texto: " parametro1
+	read -p "Ingrese texto: " parametro2
+
+	parametros $parametro1 $parametro2	
+	
+		
+Adicional:
+	Podemos declarar una variable al pedir al usuario que ingrese un parametro ejemplo:
+		read -p "Ingrese su nombre: " nombre
+		echo "$nombre"
+
+
